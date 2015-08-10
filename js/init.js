@@ -77,8 +77,7 @@
 
 		// Gallery.
 			$('.gallery').poptrox({
-			usePopupCaption: true,			
-			overlayOpacity: 0.8
+			usePopupCaption: true
 			});
 
 		// Section transitions.

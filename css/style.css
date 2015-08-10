@@ -881,12 +881,12 @@
 /* Intro                                                                         */
 /*********************************************************************************/
 
-	#intro {
-
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+	#intro { 		
+				background: url(../image/6.1.jpg) no-repeat fixed center;
+		    	-webkit-background-size: cover;
+		    	-moz-background-size: cover;
+		    	-o-background-size: cover;
+		    	background-size: cover;
 	}
 
 /*********************************************************************************/
@@ -905,10 +905,13 @@
 /*********************************************************************************/
 
 	#two {
-		
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url(../image/trisquel.jpg) no-repeat fixed center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+
 	}
 
 /*********************************************************************************/
@@ -916,6 +919,21 @@
 /*********************************************************************************/
 
 	#work {
+		background: url(../image/verde_olivo.jpg) no-repeat fixed center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+	}
+
+	#work2 {
+		background: url(../image/verde_lluvia.jpg) no-repeat fixed center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
 	}
 
 		#work .row.images {
