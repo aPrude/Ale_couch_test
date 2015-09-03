@@ -39,7 +39,7 @@
 	body,input,textarea,select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		font-size: 14pt;
+		font-size: 20pt;
 		line-height: 1.75em;
 		color: #39454b;
 		letter-spacing: 0.5px;
@@ -127,30 +127,9 @@
 
 	/* Sections/Article */
 
-		section,
-		article {
-			margin-bottom: 3em;
-		}
+		
 
-			section > :last-child,
-			article > :last-child {
-				margin-bottom: 0;
-			}
 
-			section > .content > :last-child,
-			article > .content > :last-child {
-				margin-bottom: 0;
-			}
-
-			section:last-child,
-			article:last-child {
-				margin-bottom: 0;
-			}
-
-			.row > section,
-			.row > article {
-				margin-bottom: 0;
-			}
 
 	/* Image */
 
@@ -898,6 +877,7 @@
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
+		word-wrap: break-word; 
 	}
 
 /*********************************************************************************/
@@ -919,7 +899,8 @@
 /*********************************************************************************/
 
 	#work {
-		background: url(../image/verde_olivo.jpg) no-repeat fixed center;
+		    color: #fff;
+   		 background-color: #222;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -936,51 +917,7 @@
 
 	}
 
-		#work .row.images {
-		}
-
-			#work .row.images .image {
-				position: relative;
-				top: 0;
-				left: 0;
-				
-
-				-moz-transition: all 1s ease;
-				-webkit-transition: all 1s ease;
-				-o-transition: all 1s ease;
-				-ms-transition: all 1s ease;
-				transition: all 1s ease;
-
-				-moz-transform: translateZ(0);
-				-webkit-transform: translateZ(0);
-				-o-transform: translateZ(0);
-				-ms-transform: translateZ(0);
-				transform: translateZ(0);
-			}
-
-			#work .row.images.inactive {
-			}
-
-				#work .row.images.inactive .image {
-					opacity: 0;
-				}
-
-				#work .row.images.inactive .image.from-left {
-					left: -14em;
-				}
-
-				#work .row.images.inactive .image.from-right {
-					left: 14em;
-				}
-
-				#work .row.images.inactive .image.from-top {
-					top: -7em;
-				}
-
-				#work .row.images.inactive .image.from-bottom {
-					top: 7em;
-				}
-
+		
 /*********************************************************************************/
 /* Contact                                                                       */
 /*********************************************************************************/

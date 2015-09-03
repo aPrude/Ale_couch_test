@@ -76,7 +76,7 @@
 				$(':last-child').addClass('last-child');
 
 		// Gallery.
-			$('.gallery').poptrox({
+			$('#gallery').poptrox({
 			usePopupCaption: true
 			});
 
