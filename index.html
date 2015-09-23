@@ -13,7 +13,14 @@
     	<link href="css/full-slider.css" rel="stylesheet">
     	
   		<link href="css/animsition.min.css" rel="stylesheet">
+  		
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+		$(window).load(function () {
+		  // Una vez se cargue al completo la página desaparecerá el div "cargando"
+		  $('#cargando').hide();
+		})
+  		</script>
 		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/jquery.scrollex.min.js"></script>
@@ -31,7 +38,10 @@
 
 
 
+
 	<body class="animsition" >
+	<div id="cargando"></div>
+
 		<!-- Header -->
 			<header id="header">
 
@@ -42,7 +52,7 @@
 						<li><a href="#one">Quien soy.</a></li>
 						<li><a href="#two">¿Cuál es mi símbolo?</a></li>
 						<li><a href="#work">Mi trabajo</a></li>
-						<li><a href="#contact">Contactame</a></li>
+						<li><a href="#contact">Contáctame</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -305,7 +315,10 @@
 				<!-- Icons -->
 					<ul class="actions">
 					<!-- 	<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li>
+							<a href="https://www.facebook.com/Alexandra-Roulet-Coach-y-facilitadora-de-procesos-612850465414848/timeline/" class="icon fa-facebook" 
+							    target="_blank">
+							<span class="label">Facebook</span></a></li>
 						<!-- 	<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
 						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
