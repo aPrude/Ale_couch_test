@@ -129,30 +129,26 @@
     </script>
 
      <script>
-	  $(document).on('ready', function(){
-	    $('.animsition-overlay').animsition({
-	      inClass: 'overlay-slide-in-bottom',
-	      outClass: 'overlay-slide-out-top',
-	      overlay : true,
-	      overlayClass : 'animsition-overlay-slide',
-	      overlayParentElement : 'body'
-	    })
-	    .one('animsition.start',function(){
-
-	      $('body').removeClass();
-
-	      $(this)
-	        .find('.item')
-	        .append('<h2 class="target">Callback: Start</h2>');
-
-	      console.log('Callback: Start');
-	    })
-	    .one('animsition.end',function(){
-	      $('.target', this).html('Callback: End');
-
-	      console.log('Callback: End');
-	    });
-	  });
+      $(document).on('ready', function(){
+        $('.animsition-overlay').animsition({
+          inClass: 'overlay-slide-in-bottom',
+          outClass: 'overlay-slide-out-top',
+          overlay : true,
+          overlayClass : 'animsition-overlay-slide',
+          overlayParentElement : 'body'
+        })
+        .one('animsition.start',function(){
+          $('body').removeClass();
+          $(this)
+            .find('.item')
+            .append('<h2 class="target">Callback: Start</h2>');
+          console.log('Callback: Start');
+        })
+        .one('animsition.end',function(){
+          $('.target', this).html('Callback: End');
+          console.log('Callback: End');
+        });
+      });
   </script>
 
 </body>
