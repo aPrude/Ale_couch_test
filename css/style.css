@@ -741,6 +741,7 @@
 		}
 
 		body.is-loading:before {
+			background: #BD6969;
 			-moz-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
 			-webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
 			-o-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
@@ -750,6 +751,7 @@
 		}
 
 		body.is-loading:after {
+			background: #BD6969;
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-o-animation: none !important;

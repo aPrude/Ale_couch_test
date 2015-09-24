@@ -23,17 +23,14 @@
 
 		var	$window = $(window),
 			$body = $('body'),
+		
 			$header = $('#header'),
 			$all = $body.add($header);
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+	
+			
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 0);
-			});
+		
 
 		// Touch mode.
 			skel.change(function() {
@@ -75,10 +72,7 @@
 			if (skel.vars.IEVersion < 9)
 				$(':last-child').addClass('last-child');
 
-		// Gallery.
-			$('#gallery').poptrox({
-			usePopupCaption: true
-			});
+		
 
 		// Section transitions.
 			if (!skel.vars.isMobile
