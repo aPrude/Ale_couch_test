@@ -28,9 +28,6 @@
 			$all = $body.add($header);
 
 	
-			
-
-		
 
 		// Touch mode.
 			skel.change(function() {

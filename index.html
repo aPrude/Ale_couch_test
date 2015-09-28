@@ -15,6 +15,24 @@
   		
 
 		<script type="text/javascript" src="js/jquery.js"></script>	
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.oLoader.min.js"></script>
+
+		<script type="text/javascript">
+			$(function(){
+			  $.oPageLoader({
+			    backgroundColor: '#fb4',
+			    fadeLevel: 0.8,
+			    percentageColor: '#444',
+			    percentageFontSize: '20px',
+			    progressBarColor: 'url(http://projects.ownage.sk/images/arrow.png) no-repeat right',
+			    progressBarHeight: 30,
+			    progressBarFadeLevel: 0.9
+			  });
+			});
+		</script>
+
 		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/jquery.scrollex.min.js"></script>
@@ -22,8 +40,7 @@
 		<script src="js/init.js"></script>
 	
 	
-	
-
+<!--
 <style>
 
 #loading{
@@ -277,30 +294,43 @@
 
 </style>
 
-
+-->
     <style>
       .c1{color:#406686;};
       .c2{color:#2E3725;}
       .col-lg-4 {padding:1px 1px 1px 1px};
 
     </style>
-
-  <script type='text/javascript'> 
-	window.onload = detectarCarga; 
-	function detectarCarga(){ 
-	document.getElementById("imgLOAD").style.display="none"; 
-	} 
-</script>
-
+<!--
+    <script type="text/javascript">
+       $("#header").css("#loading", "block");
+     $( document ).ready(function() {
+    	$( "#loading" ).hide( "slow" );
+    	$("#header").css("display", "block");
+  		});
+ 
+    </script>
+-->
 	</head>
 
 	<body class="animsition" >
-
-<div id='imgLOAD' style="TEXT-ALIGN: center"> 
-<b>Cargando</b> 
-<img alt='LOADING' height='50' src='image/724.GIF' width='50'/> 
-</div>
-	  
+<!--
+	<div id="loading">
+		<div id="loading-center">
+		<div id="loading-center-absolute">
+		<div class="object" id="object_one"></div>
+		<div class="object" id="object_two"></div>
+		<div class="object" id="object_three"></div>
+		<div class="object" id="object_four"></div>
+		<div class="object" id="object_five"></div>
+		<div class="object" id="object_six"></div>
+		<div class="object" id="object_seven"></div>
+		<div class="object" id="object_eight"></div>
+		<div class="object" id="object_big"></div>
+		</div>
+		</div>
+	</div>
+	  -->
 
 
 		<!-- Header -->
