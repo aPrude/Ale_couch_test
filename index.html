@@ -6,7 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>		
 
 		
-
+		<link rel="icon" type="image/png" href="image/favicon.png" />
 		<link rel="stylesheet" href="css/bootstrap.min.css">	
 	    <link rel="stylesheet" href="css/animate.min.css" type="text/css">	
 	    <link rel="stylesheet" href="css/creative.css" type="text/css">	   
@@ -20,9 +20,24 @@
 		<script src="js/jquery.oLoader.min.js"></script>
 
 		<script type="text/javascript">
-			$(function(){
-			  $.oPageLoader();
-			});
+		$(function(){
+		  $.oPageLoader({
+		  context: 'body',
+	      backgroundColor:'#2D2E2E',
+	      fadeInTime: 3000,
+	      fadeOutTime: 3000,
+	      fadeLevel: 0.8,
+	      percentageColor: '#124219',
+	      progressBarColor: '#FBFDFB',
+		  percentageFontSize: '20px',
+		  progressBarHeight: 50,		 
+		  progressBarFadeLevel: 0.8
+    	});
+  		});
+
+  		
+ 
+		
 		</script>
 
 		<script src="js/jquery.poptrox.min.js"></script>
@@ -291,6 +306,8 @@
       .c1{color:#406686;};
       .c2{color:#2E3725;}
       .col-lg-4 {padding:1px 1px 1px 1px};
+      #ale{padding-bottom: 5px;}
+
 
     </style>
 <!--
@@ -305,30 +322,15 @@
 -->
 	</head>
 
-	<body class="animsition" >
-<!--
-	<div id="loading">
-		<div id="loading-center">
-		<div id="loading-center-absolute">
-		<div class="object" id="object_one"></div>
-		<div class="object" id="object_two"></div>
-		<div class="object" id="object_three"></div>
-		<div class="object" id="object_four"></div>
-		<div class="object" id="object_five"></div>
-		<div class="object" id="object_six"></div>
-		<div class="object" id="object_seven"></div>
-		<div class="object" id="object_eight"></div>
-		<div class="object" id="object_big"></div>
-		</div>
-		</div>
-	</div>
-	  -->
+	<body class="animsition"  style="background-color:#D7ECFA; opacity: 0.6;
+    filter: alpha(opacity=60);">
+
 
 
 		<!-- Header -->
 			<header id="header">
 				<!-- Logo -->
-					<h1 id="">#aleCouch</h1>
+					<h1 id="ale">#aleCouch</h1>
 					<nav id="nav">
 					<ul>	<li><a href="#intro">Inicio</a></li>
 						<li><a href="#one">Quien soy.</a></li>
@@ -392,8 +394,7 @@
 <div > 
 <section class="no-padding" id="work">
         <div class="container-fluid" >
-            <div class="row no-gutter" >
-
+            <div class="row no-gutter" style="padding-left:40px" >
                 <div class="col-lg-4 col-sm-6"  >
                 	<div class="portfolio-box"> 
                 	<a  class="lightbox" >
@@ -408,7 +409,7 @@
                             </div>
                         </div>
                     </a>
-                	</div>
+        </div>
                 
                 </div>
 
