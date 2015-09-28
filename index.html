@@ -24,15 +24,17 @@
 		  $.oPageLoader({
 		  context: 'body',
 	      backgroundColor:'#2D2E2E',
-	      fadeInTime: 3000,
-	      fadeOutTime: 3000,
-	      fadeLevel: 0.8,
-	      percentageColor: '#124219',
+	      fadeInTime: 1500,
+	      fadeOutTime: 1500,
+	      fadeLevel: 1.0,
+	      percentageColor: '#131A14',
 	      progressBarColor: '#FBFDFB',
-		  percentageFontSize: '20px',
-		  progressBarHeight: 50,		 
-		  progressBarFadeLevel: 0.8
-    	});
+		  percentageFontSize: '30px',
+		  progressBarHeight: 50,
+		  progressBarFadeLevel: 1.0	,
+		  affectedElements: 'img,iframe,frame,script',
+  	      ownStyle: false,
+ 		  style: "<div id='ownage_page_loader_text'>0%</div><div id='ownage_page_loader'></div>"  	
   		});
 
   		
@@ -322,8 +324,7 @@
 -->
 	</head>
 
-	<body class="animsition"  style="background-color:#D7ECFA; opacity: 0.6;
-    filter: alpha(opacity=60);">
+	<body class="animsition" >
 
 
 
