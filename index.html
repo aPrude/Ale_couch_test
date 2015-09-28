@@ -285,34 +285,21 @@
 
     </style>
 
-    <script type="text/javascript">
-       $("#header").css("#loading", "block");
-     $( document ).ready(function() {
-    	$( "#loading" ).hide( "slow" );
-    	$("#header").css("display", "block");
-  		});
- 
-    </script>
+  <script type='text/javascript'> 
+	window.onload = detectarCarga; 
+	function detectarCarga(){ 
+	document.getElementById("imgLOAD").style.display="none"; 
+	} 
+</script>
 
 	</head>
 
 	<body class="animsition" >
 
-	<div id="loading">
-		<div id="loading-center">
-		<div id="loading-center-absolute">
-		<div class="object" id="object_one"></div>
-		<div class="object" id="object_two"></div>
-		<div class="object" id="object_three"></div>
-		<div class="object" id="object_four"></div>
-		<div class="object" id="object_five"></div>
-		<div class="object" id="object_six"></div>
-		<div class="object" id="object_seven"></div>
-		<div class="object" id="object_eight"></div>
-		<div class="object" id="object_big"></div>
-		</div>
-		</div>
-	</div>
+<div id='imgLOAD' style="TEXT-ALIGN: center"> 
+<b>Cargando</b> 
+<img alt='LOADING' height='50' src='image/724.GIF' width='50'/> 
+</div>
 	  
 
 
