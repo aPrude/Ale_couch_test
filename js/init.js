@@ -182,6 +182,11 @@
 						$('#contact')
 							.unscrollex();
 
+					//Testimonios
+						$('#testimonios')
+							.unscrollex();
+							
+
 				};
 
 				skel.change(function() {
