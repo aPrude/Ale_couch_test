@@ -62,7 +62,7 @@
 	}
 
 	em, i {
-		font-style: italic;
+		font-style: italcontentic;
 	}
 
 	a {
@@ -103,7 +103,8 @@
 	}
 
 	header {
-		margin-bottom: 1em;
+		margin-bottom: 0em;
+
 	}
 
 		header p {

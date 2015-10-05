@@ -15,6 +15,16 @@
 
     <link href="../css/full-slider.css" rel="stylesheet">
     <link href="../css/animsition.min.css" rel="stylesheet">
+     <style type="text/css">
+        #textoC{
+            position: absolute;
+            color: white;
+            bottom: 50px;
+            margin-left : 100px;
+            padding-right: :10px;
+            width: 90%;
+        }
+        </style>
 
 </head>
 
@@ -40,21 +50,17 @@
 
     <!-- Full Page Image Background Carousel Header -->
     <div id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-           
-        </ol>
-
-        <!-- Wrapper for Slides -->
+ 
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('../image/quinto.JPG');"></div>
-                <div class="carousel-caption">
-                    <h3> Asesoría y consultoría: en los rubros de gestión del desarrollo humano y comerciales/ventas/atención al cliente </h3>
-                </div>
-            </div>    
+              
+            </div>   
+            <center>
+            <h2 id="textoC"> Asesoría y consultoría: en los rubros de gestión del desarrollo humano y comerciales/ventas/atención al cliente </h2> 
+            </center>
+            
 
         </div>
 
@@ -66,18 +72,18 @@
             <span class="icon-next"></span>
         </a>
 
-    </div>
-    <!-- /.container -->
+        
 
-    <!-- jQuery -->
+    </div>
+  
+
     <script src="../js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+
     <script src="../js/bootstrap.min.js"></script>
 
     <script src="../js/jquery.animsition.min.js" charset="utf-8"></script>
 
-    <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
