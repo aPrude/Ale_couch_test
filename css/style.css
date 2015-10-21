@@ -99,7 +99,7 @@
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 1.5em;
+		margin-bottom: 0.5em;
 	}
 
 	header {
@@ -444,6 +444,7 @@
 				background-color: transparent;
 				border: solid 2px #e5e6e7;
 				color: inherit;
+
 			}
 
 				input[type="button"].style2:hover,
@@ -481,16 +482,41 @@
 				height: 100%;
 			}
 
+
 			.main.style1 {
-				text-align: center;
-				padding: 3em 0 3em 0;
+				text-align: left;
+				padding: 0 0 50em 0;
+			}
+			.main.style1.aleR{
+				
+			}
+
+			.main.style1.cF{
+				color: red;
 			}
 
 				.main.style1 h2 {
-					font-size: 2.5em;
-					line-height: 1.0em;
+					font-size: 2.9em;
+					line-height: 0.1em;
 					letter-spacing: -4px;
 				}
+
+				.main.style1 h3 {
+					font-size: 1.9em;
+					line-height: 0.1em;
+					letter-spacing: 0.8px;
+					font-style: oblique;
+				}
+				.main.style1 h4 {					
+					font-style: oblique;
+				}
+
+				.main.style1 footer {					
+					padding-left: 15em; 
+				}
+
+
+				
 
 				.main.style1:before {
 					content: '';
@@ -523,6 +549,8 @@
 				.main.style1.inactive .content {
 					opacity: 0;
 				}
+			}
+
 
 			.main.style2 {
 				padding: 3em 0 3em 0;
@@ -613,7 +641,7 @@
 	/* Dark */
 
 		.dark {
-			color: #fff;
+			color: #386625;
 		}
 
 			.dark a {
@@ -627,7 +655,7 @@
 
 			.dark strong:hover {
 				
-				color: #041B09;
+				color: #3C9F51;
 			}
 
 			.dark .m:hover {
@@ -636,7 +664,7 @@
 			}
 			.dark .p:hover {
 				
-				color: #041B09;
+				color: #029522;
 			}	
 
 			.dark .button.style2 {
