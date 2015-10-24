@@ -516,6 +516,11 @@
 					line-height: 1.0em;
 					letter-spacing: -4px;
 				}
+				
+				main.style1 h3 {
+					font-style: oblique;
+				}
+
 
 				.main.style1:before {
 					content: '';
