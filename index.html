@@ -17,29 +17,21 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 
 		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.oLoader.min.js"></script>
+	
 
+	
 		<script type="text/javascript">
-		$(function(){
-		  $.oPageLoader({
-		  context: 'body',
-	      backgroundColor:'#2D2E2E',
-	      fadeInTime: 2000,
-	      fadeOutTime: 2000,
-	      fadeLevel: 10.0,
-	      percentageColor: '#131A14',
-	      progressBarColor: '#FBFDFB',
-		  percentageFontSize: '30px',
-		  progressBarHeight: 50,
-		  progressBarFadeLevel: 10.0
 
-  		});
-		  });
+        $(document).ready(function(){        
+        $("#titulo").hide("slow");
+		$("#titulo").show(4000, function(){
+		$("#mot").css("color", "#1C5227");
+		$("#emp").css("color", "#1C5227");
+		});
+        });
 
 
-
-		</script>
-
+    	</script>
 		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/jquery.scrollex.min.js"></script>
@@ -57,27 +49,27 @@
       	top: 200px;
      
       }
-
-
-
+	  #ale{
+	   font-size:30px;
+	  }
 
     </style>
 	</head>
 
-	<body  class="animsition"  >
+	<body   >
 		<!-- Header -->
 			<header id="header">
 				<!-- Logo -->
-					<h1 id="ale">#aleCouch</h1>
+					<h1 id="ale">Alexandra.Roulet.coach</h1>
 					<nav id="nav">
 					<ul>	<li><a href="#intro">Inicio</a></li>
-						<li><a href="#one">Quien soy.</a></li>
+						<li><a href="#one">¿Quién eres?</a></li>
 						<li><a href="#two">¿Cuál es mi símbolo?</a></li>
 						<li><a href="#work">Mi trabajo</a></li>
 						<li><a href="#testimonios">Testimonios</a></li>
 						<li><a href="#contact">Contáctame</a></li>
 					</ul>
-				</nav>
+				    </nav>
 			</header>
 
 		<!-- Intro -->
@@ -86,7 +78,7 @@
 
 				<div class="content container 90%" >
 					<header >
-						<!-- <h2> <p>  <strong id="vis" >Visualiza </strong>, <label class="m">motívate</label> , <label class="p">empieza. </label> </p></h2>-->
+						<h2  id="titulo" > <p>  <strong  id="vis" >Visualiza </strong>, <label  id="mot">motívate</label> , <label id="emp" >empieza. </label> </p></h2>
 					<h2> <p>  <strong  > </strong><label ></label>  <label > </label> </p></h2>
 					</header>
 		
@@ -320,20 +312,19 @@
 						<p></p>
 					</header>
 					<div class="box container 75%">
-
 					<!-- Contact Form -->
 							<form method="post" action="#">
 								<div class="row 50%">
-									<div class="c1"  class="6u"><input class="c1"  type="text" name="name" placeholder="Nombre" /></div>
-									<div  style="color:#406686"   class="6u"><input  style="color:#406686" type="email" name="email" placeholder="Correo Electrónico" /></div>
+									<div class="c1"  class="6u"><input class="c1"  type="text" name="name" placeholder="Nombre" id="nombre "/></div>
+									<div  style="color:#406686"   class="6u"><input  id="correo" style="color:#406686" type="email" name="email" placeholder="Correo Electrónico" /></div>
 								</div>
 								<div class="row 50%">
-									<div     class="12u"><textarea   name="message" placeholder="Mensaje" rows="6"></textarea></div>
+									<div     class="12u"><textarea   id="mensaje" name="message" placeholder="Mensaje" rows="6"></textarea></div>
 								</div>
 								<div class="row">
 									<div class="12u">
 										<ul class="actions">
-											<li><input    type="submit" value="Enviar Mensaje" /></li>
+											<li><input    type="button" value="Enviar Mensaje"  id="enviarMail"/></li>
 										</ul>
 									</div>
 								</div>
@@ -380,6 +371,18 @@
 		  </script>
 
 
+		  <script type="text/javascript">
+            jQuery("#enviarMail").click(function(){
+               // var base = jQuery("#nombre").val() + ","+jQuery("#nombre").val() +","+jQuery("#nombre").val() ;
+                var documentoIdentidad = "45876258" ;
+                jQuery.get("http://localhost:8080/RestWebServer/resources/consultas",{
+                    documentoIdentidad:documentoIdentidad
+                },function(resultado){
+                	console.log(resultado);
+                    jQuery("#resultado span").text(resultado)
+                })
+            })
+        </script>
 
 
 
